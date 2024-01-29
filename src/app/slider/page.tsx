@@ -2,7 +2,13 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
-export const imageSlides = [
+type ImageSlide = {
+  id: number;
+  imageUrl: string;
+  caption: string;
+};
+
+const imageSlides: ImageSlide[] = [
   {
     id: 1,
     imageUrl:
